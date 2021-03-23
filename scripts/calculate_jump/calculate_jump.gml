@@ -1,5 +1,5 @@
 ///calculate_jump(x,speed,angle,startx,starty,gravity)
-function calculate_jump(){
+function calculate_jump(argument0, argument1, argument2, argument3, argument4, argument5){
 	var xx = argument0;
 	var spd = argument1;
 	var ang = degtorad(argument2);

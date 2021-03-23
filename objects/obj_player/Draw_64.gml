@@ -1,6 +1,6 @@
 /// @description Math test
 
-for(var i=0; i<12; i++) {
+for(var i=0; i<32; i++) {
 	var X = i*32;
 	
 	if(ang > 270){
@@ -14,9 +14,6 @@ for(var i=0; i<12; i++) {
 			}
 		}
 	}
-	
-	
-
 	
 	var Y = calculate_jump(X, spd, ang, 0, 0, grav);
 	draw_set_color(c_red);

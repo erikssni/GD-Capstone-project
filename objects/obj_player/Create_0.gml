@@ -8,7 +8,7 @@ jump_dir = 0;
 hsp = 0;
 vsp = 0;*/
 image_angle = 0;
-spd = 10;
+spd = 0;
 ang = 90;
 grav = 0.25;
 
