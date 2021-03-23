@@ -6,13 +6,13 @@ for(var i=0; i<12; i++) {
 	if(ang > 270){
 		ang = ang;
 	} else {
-	if(ang > 90){
-		X = -X;
-	} else {
-	if(ang > 180){
-		X = -X;
-	}
-	}
+		if(ang > 90){
+			X = -X;
+		}else {
+			if(ang > 180){
+				X = -X;
+			}
+		}
 	}
 	
 	

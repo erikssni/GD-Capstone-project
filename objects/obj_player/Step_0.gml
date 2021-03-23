@@ -27,8 +27,4 @@ if(!jump){
 		speed = spd;	
 	}
 }
-/*if (place_meeting(x+spd, y, obj_collide)) {
-	
-	jump = false;
-}*/
 

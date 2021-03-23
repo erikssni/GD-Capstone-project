@@ -1,14 +1,11 @@
 {
   "spriteId": {
-    "name": "Sprite2_3",
-    "path": "sprites/Sprite2_3/Sprite2_3.yy",
+    "name": "Sprite2",
+    "path": "sprites/Sprite2/Sprite2.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "Sprite2_3",
-    "path": "sprites/Sprite2_3/Sprite2_3.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
