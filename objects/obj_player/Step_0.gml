@@ -34,6 +34,7 @@ if(D && jump){
 }
 
 if(!jump){
+	
 	if(space_released){
 		jump = true;
 		ang = 90+image_angle;
@@ -46,14 +47,10 @@ if(!jump){
 		if(spd < 10){
 			spd += 0.2;
 		}
-		
+		xpos = x;
+		ypos = y;	
 	}
 	
-}
-if(angle_reset){
-	image_angle = landing_angle;
-	ang = landing_angle;
-	angle_reset = false;
 }
 
 if (keyboard_check(ord("R"))) {
@@ -63,12 +60,14 @@ if (keyboard_check(ord("F"))) {
 	angle_reset = true;
 }
 
+
 //sätter spelaren tillbaks hoppets startpunkt ifall man inte landar rätt
-/*if(landing_angle < -31 || landing_angle > 31){
+if(temp_angle < -31 || temp_angle > 31){
 	x = xpos;
 	y = ypos;
 	image_angle = 0;
 	spd = 0;
 	ang = 90;
 	landing_angle = 0;
-} */
+	temp_angle = 0;
+}

@@ -9,7 +9,7 @@ hsp = 0;
 vsp = 0;*/
 image_angle = 0;
 spd = 0;
-ang = 90;
+ang = 90;		//för jump path calc
 grav = 0.25;
 
 jump = false;
@@ -17,7 +17,7 @@ jump = false;
 scale = 1;
 
 landing_angle = 0;
-angle_reset = false;
+temp_angle = 0;
 
 xpos = x;
 ypos = y;

@@ -3,7 +3,7 @@
     "name": "spr_ground",
     "path": "sprites/spr_ground/spr_ground.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
