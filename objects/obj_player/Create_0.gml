@@ -1,16 +1,18 @@
 /// @description Player variables
-
-/*jump_power = 2;
-jump_speed = 5;
-grav = 0.2;
-
-jump_dir = 0;
-hsp = 0;
-vsp = 0;*/
 image_angle = 0;
 spd = 0;
 ang = 90;		//för jump path calc
 grav = 0.25;
+/*
+	MEMO
+	med max jump power (10) klarar man av att hoppa 205 pixlar rakt uppåt
+	(gravity 0.25)
+*/
+
+//Variabler för rotationen i luften
+rot_spd = 0;
+rot_add = 0.5;
+rot_spd_cap = 6;
 
 jump = false;
 

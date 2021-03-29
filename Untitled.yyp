@@ -8,6 +8,7 @@
     {"id":{"name":"calculate_jump","path":"scripts/calculate_jump/calculate_jump.yy",},"order":0,},
     {"id":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},"order":1,},
     {"id":{"name":"obj_gui","path":"objects/obj_gui/obj_gui.yy",},"order":5,},
+    {"id":{"name":"spr_max_jump_h","path":"sprites/spr_max_jump_h/spr_max_jump_h.yy",},"order":10,},
     {"id":{"name":"obj_testing","path":"objects/obj_testing/obj_testing.yy",},"order":0,},
     {"id":{"name":"fnt_text","path":"fonts/fnt_text/fnt_text.yy",},"order":0,},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"order":1,},
