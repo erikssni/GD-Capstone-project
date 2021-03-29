@@ -23,7 +23,7 @@ if(D && image_angle >= -30){
 	ang -= 1;
 }
 //Rotation i luften
-/*if(A && jump){
+if(A && jump){
 	image_angle += 5;
 	//ang +=5
 
@@ -31,17 +31,17 @@ if(D && image_angle >= -30){
 if(D && jump){
 	image_angle -= 5;
 	//ang -=5;
-}*/
+}
 
-show_debug_message(ang)
-show_debug_message(spd)
 if(!jump){
 	if(space_released){
 		jump = true;
+		ang = 90+image_angle;
 		direction = ang;
 		speed = spd;
 		spd = 0;
 	}
+	//Ökar kraften då space hålls inne
 	if(space_down){
 		if(spd < 10){
 			spd += 0.2;
@@ -50,8 +50,25 @@ if(!jump){
 	}
 	
 }
-
+if(angle_reset){
+	image_angle = landing_angle;
+	ang = landing_angle;
+	angle_reset = false;
+}
 
 if (keyboard_check(ord("R"))) {
 	game_restart();
 }
+if (keyboard_check(ord("F"))) {
+	angle_reset = true;
+}
+
+//sätter spelaren tillbaks hoppets startpunkt ifall man inte landar rätt
+/*if(landing_angle < -31 || landing_angle > 31){
+	x = xpos;
+	y = ypos;
+	image_angle = 0;
+	spd = 0;
+	ang = 90;
+	landing_angle = 0;
+} */

@@ -15,3 +15,9 @@ grav = 0.25;
 jump = false;
 
 scale = 1;
+
+landing_angle = 0;
+angle_reset = false;
+
+xpos = x;
+ypos = y;

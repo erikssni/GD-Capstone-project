@@ -23,10 +23,19 @@ function calculate_jump(argument0, argument1, argument2, argument3, argument4, a
 	y(x) = -(g/2) * ( (x - xx0)^2 / (spd^2 * cos^2(angle)) ) + tan(angle) * ( x - x0) +y0
 	
 	*/
+	/*if(ang > 270) {
+		ang = ang;
+	} else {
+		} if (ang>90) {
+			ang -= 180;
+		} else {
+			} if (ang> 180) {
+				ang -= 180;
+			}*/
 	
 	var posY = 0;
 	if(cos(ang) != 0 && spd != 0){
-		posY = -(gr/2) * ( power(xx-x0,2) / power(spd,2) * power(cos(ang),2) ) + tan(ang) * (xx-x0) + y0;
+		posY = -(gr/2) * ( power(xx-x0,2) / (power(spd,2) * power(cos(ang),2)) ) + tan(ang) * (xx-x0) + y0;
 	} else {
 		posY = 0;
 	}
