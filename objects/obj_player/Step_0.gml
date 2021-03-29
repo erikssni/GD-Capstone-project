@@ -2,6 +2,8 @@
 // You can write your code in this editor
 A = keyboard_check(ord("A"));
 D = keyboard_check(ord("D"));
+left = keyboard_check(vk_left);
+right = keyboard_check(vk_right);
 //space = keyboard_check_pressed(vk_space);
 space_down = keyboard_check(vk_space);
 space_released = keyboard_check_released(vk_space);
@@ -14,23 +16,23 @@ if(jump){
 }
 
 //Rotation på "marken"
-if(A && image_angle <= 30){
+if( (A||left) && image_angle <= 30){
 	image_angle += 1;
 	ang += 1;
 }
-if(D && image_angle >= -30){
+if( (D||right) && image_angle >= -30){
 	image_angle -= 1;
 	ang -= 1;
 }
 //Rotation i luften
-if(A && jump){
+if((A||left) && jump){
 	if(rot_spd < rot_spd_cap){
 		rot_spd += rot_add;
 	}
 	image_angle += rot_spd;
 
 }
-if(D && jump){
+if((D||right) && jump){
 	//image_angle -= 5;
 	if(rot_spd < rot_spd_cap){
 		rot_spd += rot_add;
@@ -47,12 +49,15 @@ if(!jump){
 		speed = spd;
 		spd = 0;
 		rot_spd = 0;
+		sprite_index = spr_pogo;
 	}
 	//Ökar kraften då space hålls inne
 	if(space_down){
 		if(spd < 10){
 			spd += 0.2;
 		}
+		sprite_index = spr_pogo_anim;
+		image_index = spd;
 		xpos = x;
 		ypos = y;	
 	}

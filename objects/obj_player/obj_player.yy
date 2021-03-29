@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_pogo",
+    "path": "sprites/spr_pogo/spr_pogo.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
