@@ -12,5 +12,10 @@ function btn_click(){
 		case 3:
 			game_end();
 			break;
+		
+		case 4:
+			show_message("A/D or ARROW KEYS - rotate"
+				+"\n Hold SPACE - jump power"
+				+"\n Release SPACE - jump")
 	}
 }
