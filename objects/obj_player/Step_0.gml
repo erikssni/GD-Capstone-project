@@ -10,6 +10,9 @@ space_released = keyboard_check_released(vk_space);
 
 if(jump){
 	gravity = grav;
+	sprite_index = spr_pogo;
+	idle = false;
+	idle_anim_spd = 0;
 	if(scale < 2){
 		scale = 0.7;
 	}
@@ -41,7 +44,6 @@ if((D||right) && jump){
 }
 
 if(!jump){
-	
 	if(space_released){
 		jump = true;
 		ang = 90+image_angle;
@@ -49,18 +51,30 @@ if(!jump){
 		speed = spd;
 		spd = 0;
 		rot_spd = 0;
-		sprite_index = spr_pogo;
+		
 	}
 	//Ökar kraften då space hålls inne
 	if(space_down){
 		if(spd < 10){
-			spd += 0.2;
+			spd += spd_scale;
 		}
 		sprite_index = spr_pogo_anim;
 		image_index = spd;
 		xpos = x;
-		ypos = y;	
+		ypos = y;
+		idle = false;
 	}
+	if(idle){
+		jump = true;
+		speed = idle_spd;
+		direction = 90 + image_angle;
+		sprite_index = spr_pogo_anim;
+		if(idle_anim_spd < idle_spd){
+			idle_anim_spd += 0.5;
+		}
+		image_index = idle_anim_spd;
+	}
+	
 	
 }
 
@@ -78,3 +92,5 @@ if(temp_angle < -31 || temp_angle > 31){
 	landing_angle = 0;
 	temp_angle = 0;
 }
+
+		
