@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"order":1,},
+    {"id":{"name":"rm_info","path":"rooms/rm_info/rm_info.yy",},"order":3,},
     {"id":{"name":"spr_flag","path":"sprites/spr_flag/spr_flag.yy",},"order":9,},
     {"id":{"name":"spr_jump_path","path":"sprites/spr_jump_path/spr_jump_path.yy",},"order":0,},
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},"order":3,},
@@ -43,6 +44,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_mvp","path":"rooms/rm_mvp/rm_mvp.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"roomId":{"name":"rm_info","path":"rooms/rm_info/rm_info.yy",},},
     {"roomId":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
   ],
   "Folders": [

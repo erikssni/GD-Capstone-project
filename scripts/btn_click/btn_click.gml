@@ -2,7 +2,7 @@
 function btn_click(){
 	switch(button_value){
 		case 1:
-			room_goto(rm_mvp);
+			room_goto(rm_info);
 			break;
 		
 		case 2:

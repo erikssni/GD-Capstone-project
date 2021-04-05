@@ -18,9 +18,26 @@ switch(room){
 		draw_set_font(fnt_text_large);
 		draw_set_halign(fa_center);
 		draw_set_color(c_white);
-		draw_text(room_width/2, room_height * 1/4, "Pogo Rise");
+		draw_text(room_width/2, room_height * 1/5, "Pogo Rise");
 		draw_set_font(fnt_text_small);
-		draw_text(room_width * 0.05, room_height *0.95, "Version: MVP");
+		draw_text(room_width * 0.05, room_height *0.95, "Version: Alpha 1.0");
 		draw_set_font(fnt_text);
+		
+		break;
+		
+	case rm_info:
+		draw_set_font(fnt_text_large);
+		draw_set_halign(fa_center);
+		draw_set_color(c_white);
+		draw_text(room_width/2, room_height * 1/5, "Find your way to the chequered flag."
+			+"\n\n Have fun.");
+		draw_set_font(fnt_text);
+		draw_text(room_width/2, room_height * 1/2, "Controls:"
+			+"\n A/D or ARROW KEYS - rotate"
+			+"\n Hold SPACE - jump power"
+			+"\n Release SPACE - jump"
+			+"\n\n Press ENTER to start");
+		
+		break;
 
 }
