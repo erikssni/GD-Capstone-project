@@ -66,6 +66,8 @@ if(!jump){
 		image_index = spd;
 		xpos = x;
 		ypos = y;
+		global.x_reset_pos = x;
+		global.y_reset_pos = y;
 		idle = false;
 	}
 	if(idle){
@@ -90,7 +92,12 @@ if (keyboard_check(ord("R"))) {
 
 //sätter spelaren tillbaks hoppets startpunkt ifall man inte landar rätt
 if(temp_angle < -31 || temp_angle > 31){
-	x = xpos;
+	audio_play_sound(sound_hurt, 1, false);
+	//global.shake = true;
+	obj_game.alarm[0] = 1 * room_speed;
+	instance_destroy(obj_player);
+	
+	/*x = xpos;
 	y = ypos;
 	image_angle = 0;
 	spd = 0;
@@ -98,7 +105,22 @@ if(temp_angle < -31 || temp_angle > 31){
 	landing_angle = 0;
 	temp_angle = 0;
 	audio_play_sound(sound_hurt, 1, false);
-	global.shake = true;
+	global.shake = true;*/
+}
+
+
+//custom out of bounds
+if( y >= room_height + sprite_height || y <= 0-sprite_height){
+	audio_play_sound(sound_hurt, 1, false);
+	//global.shake = true;
+	obj_game.alarm[1] = 1 * room_speed;
+	instance_destroy(obj_player);
+}
+if( x >= room_width - sprite_width || x <= 0 - sprite_width){    
+	audio_play_sound(sound_hurt, 1, false);
+	//global.shake = true;
+	obj_game.alarm[1] = 1 * room_speed;
+	instance_destroy(obj_player);
 }
 
 		

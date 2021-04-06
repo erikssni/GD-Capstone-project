@@ -1,2 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Reset to start after out of bounds
+
+audio_stop_all();
+x = xstart;
+y = ystart;

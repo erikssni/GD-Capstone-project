@@ -29,3 +29,5 @@ temp_angle = 0;
 
 xpos = x;
 ypos = y;
+
+alarm[0] = -1;

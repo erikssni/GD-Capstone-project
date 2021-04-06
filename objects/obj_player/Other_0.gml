@@ -1,4 +1,4 @@
 /// @description 
 //room_restart();
-x = xstart;
-y = ystart;
+/*x = xstart;d 
+y = ystart;*/
