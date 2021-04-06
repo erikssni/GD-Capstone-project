@@ -14,6 +14,8 @@ spd_scale = 0.5;
 rot_spd = 0;
 rot_add = 0.5;
 rot_spd_cap = 6;
+air_rotate = false;
+
 
 jump = false;
 idle = true;

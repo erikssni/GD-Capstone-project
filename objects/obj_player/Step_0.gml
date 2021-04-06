@@ -16,6 +16,7 @@ if(jump){
 	if(scale < 2){
 		scale = 0.7;
 	}
+	
 }
 
 //Rotation på "marken"
@@ -28,14 +29,14 @@ if( (D||right) && image_angle >= -30){
 	ang -= 1;
 }
 //Rotation i luften
-if((A||left) && jump){
+if((A||left) && jump && air_rotate){
 	if(rot_spd < rot_spd_cap){
 		rot_spd += rot_add;
 	}
 	image_angle += rot_spd;
 
 }
-if((D||right) && jump){
+if((D||right) && jump && air_rotate){
 	//image_angle -= 5;
 	if(rot_spd < rot_spd_cap){
 		rot_spd += rot_add;
@@ -50,7 +51,10 @@ if(!jump){
 		direction = ang;
 		speed = spd;
 		spd = 0;
-		rot_spd = 0;
+		rot_spd = 0;	
+		air_rotate = true;
+		audio_stop_sound(sound_charge);
+		audio_play_sound(sound_jump, 1, false);
 		
 	}
 	//Ökar kraften då space hålls inne
@@ -73,13 +77,15 @@ if(!jump){
 			idle_anim_spd += 0.5;
 		}
 		image_index = idle_anim_spd;
+		air_rotate = false;
+		audio_play_sound(sound_jump_low, 1, false);
 	}
-	
+	global.shake = false;
 	
 }
 
 if (keyboard_check(ord("R"))) {
-	game_restart();
+	room_restart();
 }
 
 //sätter spelaren tillbaks hoppets startpunkt ifall man inte landar rätt
@@ -91,6 +97,8 @@ if(temp_angle < -31 || temp_angle > 31){
 	ang = 90;
 	landing_angle = 0;
 	temp_angle = 0;
+	audio_play_sound(sound_hurt, 1, false);
+	global.shake = true;
 }
 
 		
