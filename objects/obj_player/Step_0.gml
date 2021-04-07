@@ -53,14 +53,23 @@ if(!jump){
 		spd = 0;
 		rot_spd = 0;	
 		air_rotate = true;
-		audio_stop_sound(sound_charge);
-		audio_play_sound(sound_jump, 1, false);
+		audio_play_sound(sound_jump_low, 1, false);
 		
 	}
 	//Ökar kraften då space hålls inne
 	if(space_down){
 		if(spd < 10){
 			spd += spd_scale;
+		}
+		if(spd >= 10){
+			jump = true;
+			ang = 90+image_angle;
+			direction = ang;
+			speed = spd;
+			spd = 0;
+			rot_spd = 0;	
+			air_rotate = true;
+			audio_play_sound(sound_jump_low, 1, false);
 		}
 		sprite_index = spr_pogo_anim;
 		image_index = spd;
@@ -86,7 +95,7 @@ if(!jump){
 	
 }
 
-if (keyboard_check(ord("R"))) {
+if (keyboard_check_pressed(ord("R"))) {
 	room_restart();
 }
 
@@ -113,13 +122,13 @@ if(temp_angle < -31 || temp_angle > 31){
 if( y >= room_height + sprite_height || y <= 0-sprite_height){
 	audio_play_sound(sound_hurt, 1, false);
 	//global.shake = true;
-	obj_game.alarm[1] = 1 * room_speed;
+	obj_game.alarm[0] = 1 * room_speed;
 	instance_destroy(obj_player);
 }
 if( x >= room_width - sprite_width || x <= 0 - sprite_width){    
 	audio_play_sound(sound_hurt, 1, false);
 	//global.shake = true;
-	obj_game.alarm[1] = 1 * room_speed;
+	obj_game.alarm[0] = 1 * room_speed;
 	instance_destroy(obj_player);
 }
 
