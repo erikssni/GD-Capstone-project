@@ -8,6 +8,7 @@ right = keyboard_check(vk_right);
 space_down = keyboard_check(vk_space);
 space_released = keyboard_check_released(vk_space);
 
+//hoppet
 if(jump){
 	gravity = grav;
 	sprite_index = spr_pogo;
@@ -95,41 +96,29 @@ if(!jump){
 	
 }
 
+//Restart room
 if (keyboard_check_pressed(ord("R"))) {
 	room_restart();
 }
 
 //sätter spelaren tillbaks hoppets startpunkt ifall man inte landar rätt
 if(temp_angle < -31 || temp_angle > 31){
-	audio_play_sound(sound_hurt, 1, false);
 	//global.shake = true;
-	obj_game.alarm[0] = 1 * room_speed;
-	instance_destroy(obj_player);
-	
-	/*x = xpos;
-	y = ypos;
-	image_angle = 0;
-	spd = 0;
-	ang = 90;
-	landing_angle = 0;
-	temp_angle = 0;
-	audio_play_sound(sound_hurt, 1, false);
-	global.shake = true;*/
+	reset_player();
 }
 
 
 //custom out of bounds
 if( y >= room_height + sprite_height || y <= 0-sprite_height){
-	audio_play_sound(sound_hurt, 1, false);
-	//global.shake = true;
-	obj_game.alarm[0] = 1 * room_speed;
-	instance_destroy(obj_player);
+	reset_player();
 }
 if( x >= room_width - sprite_width || x <= 0 - sprite_width){    
-	audio_play_sound(sound_hurt, 1, false);
-	//global.shake = true;
-	obj_game.alarm[0] = 1 * room_speed;
-	instance_destroy(obj_player);
+	reset_player();
+}
+
+//resetar player när man kolliderar en platform nerifån
+if(place_meeting(x,y-10, obj_collide_parent)){
+	reset_player();	
 }
 
 		

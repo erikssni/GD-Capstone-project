@@ -31,3 +31,4 @@ xpos = x;
 ypos = y;
 
 alarm[0] = -1;
+
