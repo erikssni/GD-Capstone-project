@@ -1,5 +1,7 @@
 /// @description 
-draw_set_color(merge_color(c_gray, c_white, hover));
+dark_green = make_color_rgb(6,77,10);
+light_green = make_color_rgb(61,171,29);
+draw_set_color(merge_color(dark_green, light_green, hover));
 
 draw_roundrect(x,y, x+width, y+height, 0);
 
