@@ -36,6 +36,7 @@ switch(room){
 			+"\n A/D or ARROW KEYS - rotate"
 			+"\n Hold SPACE - jump power"
 			+"\n Release SPACE - jump"
+			+"\n R - restart level"
 			+"\n\n Press ENTER to start");
 		
 		break;
