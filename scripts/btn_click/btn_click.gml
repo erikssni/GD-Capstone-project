@@ -32,8 +32,7 @@ function btn_click(){
 			show_message("Coming soon..");
 			break;
 		case 14:
-			//room_goto(rm_mvp);
-			show_message("Coming soon..");
+			room_goto(rm_lair);
 			break;
 		
 	}

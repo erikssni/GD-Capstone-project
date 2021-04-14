@@ -2,6 +2,11 @@
 // You can write your code in this editor
 seconds = 0;
 global.finaltime = "";
+global.time_lvl_1 = "";
+global.time_lvl_2 = "";
+global.time_lvl_3 = "";
+global.time_lvl_4 = "";
+
 
 global.shake = false;
 
