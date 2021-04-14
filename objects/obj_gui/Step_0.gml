@@ -24,4 +24,14 @@ switch(room){
 			room_goto(rm_mvp);
 		}
 	break;
+	
+	case rm_level_select:
+		var _w = 200;
+		var _h = 80;
+
+		create_button(view_wport[0]/2 - _w/2, view_hport[0]*1/3, _w, _h, "Level 1", btn_click, 11);
+		create_button(view_wport[0]/2 - _w/2, view_hport[0]*1/3 + _h + 10, _w, _h, "Level 2", btn_click, 12);
+		create_button(view_wport[0]/2 - _w/2, view_hport[0]*1/3 + (_h + 10) *2 , _w, _h, "Level 3", btn_click, 13);
+		create_button(view_wport[0]/2 - _w/2, view_hport[0]*1/3 + (_h + 10) *3 , _w, _h, "Level 4", btn_click, 14);
+		
 }

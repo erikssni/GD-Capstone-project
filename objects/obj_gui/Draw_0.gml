@@ -41,5 +41,13 @@ switch(room){
 			
 		
 		break;
+	case rm_level_select:
+		draw_set_font(fnt_text_large);
+		draw_set_halign(fa_center);
+		draw_set_color(c_black);
+		draw_text(room_width/2, room_height * 1/5, "Levels:");
+		draw_set_font(fnt_text);
+		
+		break;
 
 }

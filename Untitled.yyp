@@ -24,6 +24,7 @@
     {"id":{"name":"fnt_text","path":"fonts/fnt_text/fnt_text.yy",},"order":0,},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"order":1,},
     {"id":{"name":"sound_hurt","path":"sounds/sound_hurt/sound_hurt.yy",},"order":0,},
+    {"id":{"name":"rm_level_select","path":"rooms/rm_level_select/rm_level_select.yy",},"order":5,},
     {"id":{"name":"spr_hitbox","path":"sprites/spr_hitbox/spr_hitbox.yy",},"order":13,},
     {"id":{"name":"obj_insta_death","path":"objects/obj_insta_death/obj_insta_death.yy",},"order":3,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":2,},
@@ -53,6 +54,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_level_select","path":"rooms/rm_level_select/rm_level_select.yy",},},
     {"roomId":{"name":"rm_lair","path":"rooms/rm_lair/rm_lair.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_mvp","path":"rooms/rm_mvp/rm_mvp.yy",},},
