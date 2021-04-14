@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_flag",
-    "path": "sprites/spr_flag/spr_flag.yy",
+    "name": "spr_instadeath",
+    "path": "sprites/spr_instadeath/spr_instadeath.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Collisions",
+    "path": "folders/Objects/Collisions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_goal",
+  "name": "obj_insta_death",
   "tags": [],
   "resourceType": "GMObject",
 }
