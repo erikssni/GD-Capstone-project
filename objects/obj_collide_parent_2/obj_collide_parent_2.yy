@@ -1,6 +1,9 @@
 {
-  "spriteId": null,
-  "solid": false,
+  "spriteId": {
+    "name": "Sprite2_2",
+    "path": "sprites/Sprite2_2/Sprite2_2.yy",
+  },
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -17,18 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_gui","path":"objects/obj_gui/obj_gui.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_gui","path":"objects/obj_gui/obj_gui.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Collisions",
+    "path": "folders/Objects/Collisions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_gui",
+  "name": "obj_collide_parent_2",
   "tags": [],
   "resourceType": "GMObject",
 }
