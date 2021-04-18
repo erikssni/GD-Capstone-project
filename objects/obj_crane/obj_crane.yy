@@ -1,9 +1,9 @@
 {
   "spriteId": {
-    "name": "spr_flag",
-    "path": "sprites/spr_flag/spr_flag.yy",
+    "name": "spr_crane",
+    "path": "sprites/spr_crane/spr_crane.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -20,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"parent":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "city",
+    "path": "folders/Objects/Collisions/city.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_goal",
+  "name": "obj_crane",
   "tags": [],
   "resourceType": "GMObject",
 }
