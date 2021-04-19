@@ -38,3 +38,11 @@ if(global.shake){
 	camera_set_view_angle(view_camera[0], 0);
 }
 
+//Restart room
+if (keyboard_check_pressed(ord("R"))) {
+	room_restart();
+}
+//Return to menu
+if (keyboard_check_pressed(vk_escape)) {
+	room_goto(rm_menu);
+}

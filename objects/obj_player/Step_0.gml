@@ -96,15 +96,6 @@ if(!jump){
 	
 }
 
-//Restart room
-if (keyboard_check_pressed(ord("R"))) {
-	room_restart();
-}
-//Return to menu
-if (keyboard_check_pressed(vk_escape)) {
-	room_goto(rm_menu);
-}
-
 //sätter spelaren tillbaks hoppets startpunkt ifall man inte landar rätt
 if(temp_angle < -31 || temp_angle > 31){
 	//global.shake = true;
