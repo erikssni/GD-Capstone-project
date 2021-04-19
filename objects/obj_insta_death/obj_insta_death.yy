@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_instadeath",
-    "path": "sprites/spr_instadeath/spr_instadeath.yy",
+    "name": "spr_death",
+    "path": "sprites/spr_death/spr_death.yy",
   },
   "solid": false,
   "visible": true,
