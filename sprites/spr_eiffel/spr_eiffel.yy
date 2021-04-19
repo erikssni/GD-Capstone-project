@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 1,
+  "collisionKind": 0,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"01738229-7e2a-4c8a-93fa-b25f2091c691","path":"sprites/spr_eiffel/spr_eiffel.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"01738229-7e2a-4c8a-93fa-b25f2091c691","path":"sprites/spr_eiffel/spr_eiffel.yy",},"LayerId":{"name":"a13724dd-8f01-4e35-8a05-f1c54018c4ad","path":"sprites/spr_eiffel/spr_eiffel.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"01738229-7e2a-4c8a-93fa-b25f2091c691","path":"sprites/spr_eiffel/spr_eiffel.yy",},"LayerId":{"name":"","path":"",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_eiffel","path":"sprites/spr_eiffel/spr_eiffel.yy",},"resourceVersion":"1.0","name":"01738229-7e2a-4c8a-93fa-b25f2091c691","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
