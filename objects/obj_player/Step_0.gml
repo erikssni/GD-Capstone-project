@@ -100,6 +100,10 @@ if(!jump){
 if (keyboard_check_pressed(ord("R"))) {
 	room_restart();
 }
+//Return to menu
+if (keyboard_check_pressed(vk_escape)) {
+	room_goto(rm_menu);
+}
 
 //sätter spelaren tillbaks hoppets startpunkt ifall man inte landar rätt
 if(temp_angle < -31 || temp_angle > 31){
@@ -120,5 +124,9 @@ if( x >= room_width - sprite_width || x <= 0 - sprite_width){
 if(place_meeting(x,y-10, obj_collide_parent)){
 	reset_player();	
 }
+// collision från sidan
+/*if(place_meeting(x-2,y, obj_collide_parent) || place_meeting(x+2,y, obj_collide_parent)){
+	speed = 0;
+}*/
 
 		

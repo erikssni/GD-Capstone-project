@@ -3,9 +3,37 @@
 // menu system = https://youtu.be/jsWPUuwB1RQ
 
 switch(room){
+	//winning screens
 	case rm_win:
 		if(keyboard_check_pressed(vk_enter)){
-			room_goto(rm_mvp);
+			room_goto(rm_level2);
+		}
+		if(keyboard_check_pressed(vk_escape)){
+			room_goto(rm_menu);
+		}
+	break;
+	
+	case rm_win2:
+		if(keyboard_check_pressed(vk_enter)){
+			room_goto(rm_city);
+		}
+		if(keyboard_check_pressed(vk_escape)){
+			room_goto(rm_menu);
+		}
+	break;
+	
+	case rm_win3:
+		if(keyboard_check_pressed(vk_enter)){
+			room_goto(rm_lair);
+		}
+		if(keyboard_check_pressed(vk_escape)){
+			room_goto(rm_menu);
+		}
+	break;
+	
+	case rm_win4:
+		if(keyboard_check_pressed(vk_escape)){
+			room_goto(rm_menu);
 		}
 	break;
 	
@@ -21,7 +49,7 @@ switch(room){
 		
 	case rm_info:
 		if (keyboard_check_pressed(vk_enter)){
-			room_goto(rm_mvp);
+			room_goto(rm_level1);
 		}
 	break;
 	

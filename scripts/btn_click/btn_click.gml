@@ -6,7 +6,7 @@ function btn_click(){
 			break;
 		
 		case 2:
-			show_message("More levels coming soon..");
+			room_goto(rm_level_select);
 			break;
 		
 		case 3:
@@ -21,15 +21,14 @@ function btn_click(){
 		
 		// LEVELS
 		case 11:
-			room_goto(rm_mvp);
+			room_goto(rm_level1);
 			break;
 		case 12:
-			//room_goto(rm_mvp);
-			show_message("Coming soon..");
+			room_goto(rm_level2);
+
 			break;
 		case 13:
-			//room_goto(rm_mvp);
-			show_message("Coming soon..");
+			room_goto(rm_city);
 			break;
 		case 14:
 			room_goto(rm_lair);

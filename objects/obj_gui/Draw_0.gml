@@ -6,10 +6,44 @@ switch(room){
 		draw_set_color(c_black);
 		draw_text(room_width/2, room_height * 1/3, 
 			@"Level completed!" +
-"\nFinal time: " + string(global.finaltime) +
-"\n\nThank you for playing, more levels coming soon."+
-"\n\n Do you want to play again?" +
-"\n Press ENTER to restart"	);
+"\nFinal time: " + string(global.time_lvl_1) +
+"\n\n Press ENTER to advance to the next level"	);
+
+			draw_set_halign(fa_left);
+		break;
+		
+	case rm_win2:
+		draw_set_font(fnt_text)
+		draw_set_halign(fa_center);
+		draw_set_color(c_black);
+		draw_text(room_width/2, room_height * 1/3, 
+			@"Level completed!" +
+"\nFinal time: " + string(global.time_lvl_2) +
+"\n\n Press ENTER to advance to the next level"	);
+
+			draw_set_halign(fa_left);
+		break;
+
+	case rm_win3:
+		draw_set_font(fnt_text)
+		draw_set_halign(fa_center);
+		draw_set_color(c_black);
+		draw_text(room_width/2, room_height * 1/3, 
+			@"Level completed!" +
+"\nFinal time: " + string(global.time_lvl_3) +
+"\n\n Press ENTER to advance to the next level"	);
+
+			draw_set_halign(fa_left);
+		break;
+	
+	case rm_win4:
+		draw_set_font(fnt_text)
+		draw_set_halign(fa_center);
+		draw_set_color(c_black);
+		draw_text(room_width/2, room_height * 1/3, 
+			@"Level completed!" +
+"\nFinal time: " + string(global.time_lvl_4) +
+"\n\n Press ESC to return to menu"	);
 
 			draw_set_halign(fa_left);
 		break;
@@ -37,6 +71,7 @@ switch(room){
 			+"\n Hold SPACE - jump power"
 			+"\n Release SPACE - jump"
 			+"\n R - restart level"
+			+"\n ESC - return to menu"
 			+"\n\n Press ENTER to start");
 			
 		
