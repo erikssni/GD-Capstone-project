@@ -8,18 +8,26 @@ hiscores = [];
 switch(room){
 	case rm_level1:
 		hiscores = lvl1_hiscores;
+		draw_text(view_wport[0]*0.1, view_hport[0]*0.05, "Death count: " 
+		+ string(global.deathcount1));
 	break;
 	
 	case rm_level2:
 		hiscores = lvl2_hiscores;
+		draw_text(view_wport[0]*0.1, view_hport[0]*0.05, "Death count: " 
+		+ string(global.deathcount2));
 	break;
 	
 	case rm_city:
 		hiscores = lvl3_hiscores;
+		draw_text(view_wport[0]*0.1, view_hport[0]*0.05, "Death count: " 
+		+ string(global.deathcount3));
 	break;
 	
 	case rm_lair:
 		hiscores = lvl4_hiscores;
+		draw_text(view_wport[0]*0.1, view_hport[0]*0.05, "Death count: " 
+		+ string(global.deathcount4));
 	break;
 }
 

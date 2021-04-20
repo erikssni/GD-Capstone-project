@@ -62,4 +62,9 @@ switch(room){
 		create_button(view_wport[0]/2 - _w/2, view_hport[0]*1/3 + (_h + 10) *2 , _w, _h, "Level 3", btn_click, 13);
 		create_button(view_wport[0]/2 - _w/2, view_hport[0]*1/3 + (_h + 10) *3 , _w, _h, "Level 4", btn_click, 14);
 		
+		if (keyboard_check_pressed(vk_escape)){
+			room_goto(rm_menu);
+		}
+	break;
+		
 }
